@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "This is the source for the raw data tables."
+    database: kestra-course-485912 # Project ID
+    schema: zoomcamp # Replace with your schema name
+    tables:
+      - name: green_tripdata
+        description: "This table contains the green taxi rides data for NYC."
+      - name: yellow_tripdata
+        description: "This table contains the yellow taxi rides data for NYC."
