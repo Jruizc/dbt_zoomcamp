@@ -45,8 +45,8 @@ sources:
             description: Total amount charged
           - name: trip_type
             description: Trip type (1=Street-hail, 2=Dispatch)
-       #   - name: ehail_fee
-       #     description: E-hail fee
+          - name: ehail_fee
+            description: E-hail fee
 
       - name: yellow_tripdata
         description: Raw yellow taxi trip records
@@ -85,3 +85,21 @@ sources:
             description: Improvement surcharge
           - name: total_amount
             description: Total amount charged
+      - name: fhv_tripdata
+        description: For-Hire Vehicle records
+        columns:
+          - name: dispatching_base_num
+            description: Dispatching base number
+          - name: pickup_datetime
+            description: Date and time when the meter was engaged
+          - name: dropoff_datetime
+            description: Date and time when the meter was disengaged
+          - name: PUlocationID
+            description: TLC Taxi Zone where the meter was engaged
+          - name: DOlocationID
+            description: TLC Taxi Zone where the meter was disengaged
+          - name: SR_Flag
+            description: Service request flag (Y/N)
+          - name: Affiliated_base_number
+            description: "Base number affiliated with the trip record"
+         
